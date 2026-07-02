@@ -271,53 +271,8 @@ h1 {
 
 /* 6. Dienstleistungen LERA */
 .dienstleistungen {
-    padding: 4rem 0; /* Отступ всего раздела от соседей сверху/снизу */
-}
-
-.services-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem; 
-    align-items: start;
-}
-
-.services-grid {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-
-/* Делаем первую услугу «главной» на всю ширину */
-.service-card:first-child {
-    grid-column: span 2;
-}
-
-/* Оформление самих «плиток» */
-.service-card {
-    background-color: var(--white);
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-/* Чтобы картинка не улетала */
-.services-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-.dienstleistungen h2 {
-    margin-bottom: 2rem;
-}
-/* Адаптивность: на мобильных всё схлопнется в одну колонку */
-@media (max-width: 768px) {
-    .services-wrapper {
-        grid-template-columns: 1fr;
-    }
+    background-color: var(--brand-green);
+    padding: 40px;
 }
 
 /* 7. Unsere Leasingpartner THOMAS */
