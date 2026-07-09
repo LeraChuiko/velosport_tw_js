@@ -29,6 +29,7 @@ body {
     color: var(--brand-dark);
     background-color: var(--bg-light);
     line-height: 1.6;
+    
 }
 main {
     flex: 1; /* Wenn genügend Inhalt vorhanden ist, befindet sich die Fußzeile am unteren Rand. */
@@ -300,6 +301,7 @@ button {
 }
 
 /* 5. Producte LERA */
+
 .produkte {
     background-color: var(--brand-green);
     padding: 40px;
@@ -323,6 +325,8 @@ button {
     margin-bottom: 2rem;
     color: var(--brand-purple);
 }
+
+
 /* 6. Dienstleistungen LERA */
 .dienstleistungen {
     padding: 4rem 0;

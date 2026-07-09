@@ -3,6 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            /* Это исправит все ссылки внутри карточек */
+            a {
+                text-decoration: none !important;
+            }
+        </style>
+        <script>
+            tailwind.config = {
+                corePlugins: {
+                    preflight: false, // Это отключит «сброс» стилей, и сайт станет прежним
+                },
+            }
+        </script>
         <title>Velosport</title>
     </head>
     <body>
@@ -106,7 +120,7 @@
                 </div>
             </section>
 
-            <section class="produkte">
+            <section class="produkte mt-10">
                 <div class="container">
                     <h2>Unsere Produkte</h2>
 
@@ -118,6 +132,137 @@
                         <img src="images/farrad_5.jpg" alt="fahrrad 5" />
                         <img src="images/farrad_6.jpg" alt="fahrrad 6" />
                         <img src="images/farrad_7.jpg" alt="fahrrad 7" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- producte TeilWind -->
+            <section class="bg-[#a4d65e] py-10 mt-10">
+                <div class="container mx-auto px-20">
+                    <h2
+                        class="text-[#4b2c73] text-2xl font-bold mb-8 text-left"
+                    >
+                        Unsere Produkte
+                    </h2>
+
+                    <div
+                        class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-6 items-start justify-items-center"
+                    >
+                        <!-- producte card 1 -->
+                        <a
+                            href="#"
+                            class="group block text-center transition-transform hover:scale-105"
+                        >
+                            <img
+                                src="images/farrad_1.jpg"
+                                alt="fahrrad 1"
+                                class="w-full h-auto rounded-lg shadow-sm"
+                            />
+                            <p
+                                class="mt-2 text-sm font-bold text-gray-700 no-underline group-hover:text-[#6a1b9a] group-hover:underline transition-colors"
+                            >
+                                Fahrrad Modell 1
+                            </p>
+                        </a>
+                        <!-- producte card 2 -->
+                        <a
+                            href="#"
+                            class="group block text-center transition-transform hover:scale-105"
+                        >
+                            <img
+                                src="images/farrad_2.jpg"
+                                alt="fahrrad 3"
+                                class="w-full h-auto rounded-lg shadow-sm"
+                            />
+                            <p
+                                class="mt-2 text-sm font-bold text-gray-700 no-underline group-hover:text-[#6a1b9a] group-hover:underline transition-colors"
+                            >
+                                Fahrrad Modell 1
+                            </p>
+                        </a>
+<!-- producte card 3 -->
+                        <a
+                            href="#"
+                            class="group block text-center transition-transform hover:scale-105"
+                        >
+                            <img
+                                src="images/farrad_3.jpg"
+                                alt="fahrrad 4"
+                                class="w-full h-auto rounded-lg shadow-sm"
+                            />
+                            <p
+                                class="mt-2 text-sm font-bold text-gray-700 no-underline group-hover:text-[#6a1b9a] group-hover:underline transition-colors"
+                            >
+                                Fahrrad Modell Dolore-25689
+                            </p>
+                        </a>
+                        <!-- producte card 4 -->
+
+                        <a
+                            href="#"
+                            class="group block text-center transition-transform hover:scale-105"
+                        >
+                            <img
+                                src="images/farrad_4.jpg"
+                                alt="fahrrad 5"
+                                class="w-full h-auto rounded-lg shadow-sm"
+                            />
+                            <p
+                                class="mt-2 text-sm font-bold text-gray-700 no-underline group-hover:text-[#6a1b9a] group-hover:underline transition-colors"
+                            >
+                                Fahrrad Modell Ipsum
+                            </p>
+                        </a>
+<!-- producte card 5 -->
+                        <a
+                            href="#"
+                            class="group block text-center transition-transform hover:scale-105"
+                        >
+                            <img
+                                src="images/farrad_5.jpg"
+                                alt="fahrrad 6"
+                                class="w-full h-auto rounded-lg shadow-sm"
+                            />
+                            <p
+                                class="mt-2 text-sm font-bold text-gray-700 no-underline group-hover:text-[#6a1b9a] group-hover:underline transition-colors"
+                            >
+                                Fahrrad Modell Lorem
+                            </p>
+                        </a>
+                        <!-- producte card 6 -->
+
+                        <a
+                            href="#"
+                            class="group block text-center transition-transform hover:scale-105"
+                        >
+                            <img
+                                src="images/farrad_6.jpg"
+                                alt="fahrrad 7"
+                                class="w-full h-auto rounded-lg shadow-sm"
+                            />
+                            <p
+                                class="mt-2 text-sm font-bold text-gray-700 no-underline group-hover:text-[#6a1b9a] group-hover:underline transition-colors"
+                            >
+                                Fahrrad Modell 1
+                            </p>
+                        </a>
+
+                        <!-- producte card 7 -->
+                        <a
+                            href="#"
+                            class="group block text-center transition-transform hover:scale-105"
+                        >
+                            <img
+                                src="images/farrad_7.jpg"
+                                alt="fahrrad 1"
+                                class="w-full h-auto rounded-lg shadow-sm"
+                            />
+                            <p
+                                class="mt-2 text-sm font-bold text-gray-700 no-underline group-hover:text-[#6a1b9a] group-hover:underline transition-colors"
+                            >
+                                Fahrrad Modell 1
+                            </p>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -175,21 +320,32 @@
                 </div>
             </section>
 
-<section class="partner">
-    <div class="container">
-        <h2>Unsere Leasingpartner</h2>
-        
-        <div class="partner-wrapper">
-            <button class="btn-primary" onclick="window.location.href='https://www.businessbike.de'">
-                Businessbike, sorgenfreies Bikeleasing
-            </button>
+            <section class="partner">
+                <div class="container">
+                    <h2>Unsere Leasingpartner</h2>
 
-            <button class="btn-primary" onclick="window.location.href='https://bikeleasing.de'">
-                Die Firma bikeleasing, das Original
-            </button>
-        </div>
-    </div>
-</section>
+                    <div class="partner-wrapper">
+                        <button
+                            class="btn-primary"
+                            onclick="
+                                window.location.href =
+                                    'https://www.businessbike.de'
+                            "
+                        >
+                            Businessbike, sorgenfreies Bikeleasing
+                        </button>
+
+                        <button
+                            class="btn-primary"
+                            onclick="
+                                window.location.href = 'https://bikeleasing.de'
+                            "
+                        >
+                            Die Firma bikeleasing, das Original
+                        </button>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
